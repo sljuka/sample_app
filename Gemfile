@@ -3,15 +3,23 @@ ruby '1.9.3'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
+  gem 'guard-rspec', '2.5.0'
+  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'guard-spork', '1.5.0'
+  gem 'childprocess', '0.3.6'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.0.0'
   gem 'capybara', '2.1.0'
+
+  gem 'rb-notifu', '0.0.4'
+  gem 'win32console', '1.3.2'
 end
 
 gem 'sass-rails', '4.0.0'
